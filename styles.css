@@ -182,7 +182,7 @@ form textarea[name='mssg'] {
     height: 180px;
 }
 
-form input[type='button'] {
+form input[type='submit'] {
     background: var(--bg-color);
     cursor: pointer;
     color: var(--header-color);
