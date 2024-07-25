@@ -1,9 +1,9 @@
 function sendWA() {
-    let name = document.getElementById('name');
-    let email = document.getElementById('email');
-    let phone = document.getElementById('phone');
-    let address = document.getElementById('address');
-    let message = document.getElementById('message');
+    var name = document.getElementById('name');
+    var email = document.getElementById('email');
+    var phone = document.getElementById('phone');
+    var address = document.getElementById('address');
+    var message = document.getElementById('message');
 
     if (name.value.trim() == "") {
         name.style.background = "lightpink";
@@ -12,7 +12,7 @@ function sendWA() {
         return false;
     }
 
-    let url = "https://wa.me/6285156262472?text="
+    var url = "https://wa.me/6285156262472?text="
         + "Nama: " + name.value + "%0a"
         + "Email: " + email.value + "%0a"
         + "Nomor Telepon: " + phone.value + "%0a"
