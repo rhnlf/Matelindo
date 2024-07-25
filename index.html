@@ -13,6 +13,7 @@
     <link rel="icon" href="./images/logomatelindosamasisi.png" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/bc838833bc.js" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
 </head>
 
 <body>
@@ -133,18 +134,15 @@
                         maka Kami menyediakan jasa konsultasi secara gratis (untuk wilayah Jabodetabek & Bandung). Staf
                         kami akan mendengarkan keinginan Anda dan memberikan pilihan jasa pindahan yang sesuai dengan
                         kebutuhan Anda.</p>
-                    <form method="POST" action="https://formsubmit.co/87f7de3bce8575c55f90f9f34507be3d"
-                        style="margin: 32px 0px;">
-                        <input type="text" name="_honey" style="display: none;">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="text" name="Nama" placeholder="Nama Lengkap" required />
+                    <form method="POST" onsubmit="return validate()" style="margin: 32px 0px;">
+                        <input id="name" type="text" name="Nama" placeholder="Nama Lengkap" required />
                         <div class="d-grid col-2" style="margin: 16px 0px;">
-                            <input type="email" name="Email" placeholder="Alamat Email" required />
-                            <input type="text" name="Nomor&nbsp;Telepon" placeholder="Nomor Telepon" required />
+                            <input id="email" type="email" name="Email" placeholder="Alamat Email" required />
+                            <input id="phone" type="text" name="Nomor Telepon" placeholder="Nomor Telepon" required />
                         </div>
-                        <textarea name="Alamat" placeholder="Alamat Lengkap" required></textarea>
-                        <textarea name="Pesan" placeholder="Pesan" required></textarea>
-                        <input type="submit" value="Kirim" />
+                        <textarea id="address" name="Alamat" placeholder="Alamat Lengkap" required></textarea>
+                        <textarea id="message" name="Pesan" placeholder="Pesan" required></textarea>
+                        <input type="submit" value="Kirim" onclick="sendWa()" />
                     </form>
                 </div>
             </div>
