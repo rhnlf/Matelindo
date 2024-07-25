@@ -12,12 +12,11 @@ function sendWA() {
         return false;
     }
 
-    var url = `https://wa.me/6285156262472?text=
-    Nama: ${name.value}%0a
-    Email: ${email.value}%0a
-    Nomor Telepon: ${phone.value}%0a
-    Alamat: ${address.value}%0a
-    Pesan: ${message.value}`;
+    var url = `https://wa.me/6285156262472?text=Nama:20%${name.value}%0a
+    Email:20%${email.value}%0a
+    Nomor Telepon:20%${phone.value}%0a
+    Alamat:20%${address.value}%0a
+    Pesan:20%${message.value}`;
 
     window.open(url, '_blank').focus();
 }
